@@ -18,14 +18,3 @@
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
-
-# PhpStorm -------
-.idea/
-
-# Zależności Composera
-/vendor/
-
-# Lokalne pliki środowiskowe
-/.env
-/.env.local
-/.env.*.local
