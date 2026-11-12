@@ -40,7 +40,11 @@
                         <a class="nav-link" href="{{ path('app_location_index') }}">Locations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('app_measurement_index') }}">Measurements</a>
+                        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                            <a href="{{ path('app_logout') }}">Logout</a>
+                        {% else %}
+                            <a href="{{ path('app_login') }}">Login</a>
+                        {% endif %}
                     </li>
                 </ul>
             </div>
